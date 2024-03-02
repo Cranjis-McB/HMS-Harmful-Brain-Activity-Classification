@@ -7,3 +7,5 @@ This repository contains a series of experiments that improved the classificatio
 * Each of these samples belongs to one of six categories: Seizure, LPD, GPD, LRDA, GRDA, or Other is determined by expert votes.
 * The vote count for each sample varies among several experts, ranging from 1 to 27.
 * The Competition Criterion is KLDivergence Loss between the predicted probability and the observed target.
+
+I primarily focused on utilizing Spectrogram Image Data, employing both CNN and Transformer-based approaches to enhance the Performance.
