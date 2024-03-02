@@ -4,7 +4,7 @@ This repository contains a series of experiments that improved the classificatio
 ## Description
 
 * The Data consists of 50-second long EEG samples plus matched spectrograms covering a 10-minute window centered at the same time and labeled the central 10 seconds.
-* Each of these samples belongs to one of six categories: Seizure, LPD, GPD, LRDA, GRDA, or Other is determined by expert votes.
+* Each of these samples belongs to one of six categories: Seizure, LPD, GPD, LRDA, GRDA, or Other is determined by expert voters.
 * The vote count for each sample varies among several experts, ranging from 1 to 27.
 * The Competition Criterion is KLDivergence Loss between the predicted probability and the observed target.
 
