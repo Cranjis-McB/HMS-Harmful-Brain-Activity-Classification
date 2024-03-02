@@ -8,4 +8,4 @@ This repository contains a series of experiments that improved the classificatio
 * The vote count for each sample varies among several experts, ranging from 1 to 27.
 * The Competition Criterion is KLDivergence Loss between the predicted probability and the observed target.
 
-I primarily focused on utilizing Spectrogram Image Data, employing both CNN and Transformer-based approaches to enhance the Performance.
+I primarily focused on utilizing Spectrogram Image Data, employing both [CNN](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/tree/main/CNN) and Transformer[https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/tree/main/Transformer] based approaches to enhance the Performance.
