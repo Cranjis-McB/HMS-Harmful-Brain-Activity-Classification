@@ -17,7 +17,7 @@ For most of the experiments, I have followed the same configuration as described
 * **Model**: Efficientnet-b2
 * **Epochs**: 6
 * **Eval_per_epoch**: 2
-* **Optimizer**: Adam
+* **Optimizer**: AdamW
 * **Learning Rate**: 1e-3
 * **Scheduler**: One Cycle Policy with MaxLR: 1e-3
 * **Loss**: KLDiv Loss
