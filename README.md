@@ -13,13 +13,12 @@ I primarily focused on utilizing **Spectrogram Image Data**, employing both [CNN
 ## Configuration
 For most of the experiments, I have followed the same configuration as described below.
 
-### For CNN
 * **Model**: Efficientnet-b2
 * **Epochs**: 6
 * **Eval_per_epoch**: 2
 * **Optimizer**: AdamW
-* **Learning Rate**: 1e-3
-* **Scheduler**: One Cycle Policy with MaxLR: 1e-3
+* **Learning Rate**: 1e-3 (For CNN)/ 1e-4 (For Transformers)
+* **Scheduler**: One Cycle Policy with MaxLR: 1e-3 (For CNN)/ 1e-4 (For Transformers)
 * **Loss**: KLDiv Loss
 
 
