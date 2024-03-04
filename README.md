@@ -19,7 +19,7 @@ For most of the experiments, I have followed the same configuration as described
 * **Eval_per_epoch**: 2
 * **Optimizer**: Adam
 * **Learning Rate**: 1e-3
-* **Policy**: One Cycle Policy with MaxLR: 1e-3
+* **Scheduler**: One Cycle Policy with MaxLR: 1e-3
 * **Loss**: KLDiv Loss
 
 
