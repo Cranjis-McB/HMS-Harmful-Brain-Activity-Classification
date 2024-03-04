@@ -10,6 +10,19 @@ This repository contains a series of experiments that improved the classificatio
 
 I primarily focused on utilizing **Spectrogram Image Data**, employing both [CNN](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/tree/main/CNN) and [Transformer](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/tree/main/Transformers) based approaches to enhance the Performance.
 
+## Configuration
+For most of the experiments, I have followed the same configuration as described below.
+
+### For CNN
+* **Model**: Efficientnet-b2
+* **Epochs**: 6
+* **Eval_per_epoch**: 2
+* **Optimizer**: Adam
+* **Learning Rate**: 1e-3
+* **Policy**: One Cycle Policy with MaxLR: 1e-3
+* **Loss**: KLDiv Loss
+
+
 ## References
 * [HMS-Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification)
 * [Audio Spectrogram Transformer](https://huggingface.co/docs/transformers/model_doc/audio-spectrogram-transformer)
