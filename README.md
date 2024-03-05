@@ -32,15 +32,17 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 |-----------------|-----------------|-----------------|
 | Baseline | 0.7427 | 0.46 |
 
-**2. [Spectrogram Image Statistical Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb)**
+**2. [Spectrogram Image Statistical Model]([https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb))**
 
 
 In this approach, rather than directly using the images, we extract the following statistics from four images and utilize them as input for our CNN:
 
-* X_min = np.min([LL, LP, RL, RP])
-* X_max = np.max([LL, LP, RL, RP])
-* X_mean = np.mean([LL, LP, RL, RP])
-* X_var = Max - Min
+```python
+ X_min = np.min([LL, LP, RL, RP])
+ X_max = np.max([LL, LP, RL, RP])
+ X_mean = np.mean([LL, LP, RL, RP])
+ X_var = Max - Min
+```
 
  
  These derived statistics are then utilized as input features for our Convolutional Neural Network (CNN).
