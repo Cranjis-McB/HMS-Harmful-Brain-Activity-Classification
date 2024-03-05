@@ -50,6 +50,22 @@ These can be seen as **global spectrogram features**. These derived statistics a
 |-----------------|-----------------|-----------------|
 | Global Features | 0.7324 | 0.46 |
 
+**3. Ensemble of 1 + 2**
+
+Ensemble can be performed in multiple ways; 1. Model Ensemble; where we take the weighted sum of the 2 models to get the final output. 2. Input Feature Ensemble; where we concat the input features from 1 and 2 and then train the model.
+
+```python
+ # 1. Model Ensemble
+ model = 0.5 * model_1 + 0.5 * model_2
+
+ # 2. Input Ensemble
+ input = np.hstack([baseline_features, global_features])
+```
+
+ | Type | OOF-CV | Public LB |
+|-----------------|-----------------|-----------------|
+| Model Ensemble | _ | 0.43 |
+| Input Feature Ensemble | 0.7027 | _ |
 
 
 ## References
