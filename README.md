@@ -64,8 +64,8 @@ Ensemble can be performed in multiple ways; 1. Model Ensemble; where we take the
 
  | Type | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Model Ensemble | _ | 0.43 |
-| Input Feature Ensemble | 0.7027 | _ |
+| Model Ensemble | NA | 0.43 better |
+| Input Feature Ensemble | 0.7027 | 0.43 |
 
 
 ## References
