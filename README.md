@@ -48,7 +48,7 @@ These can be seen as **global spectrogram features**. These derived statistics a
 
  | Model | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Statistical | 0.7324 | 0.46 |
+| Global Features | 0.7324 | 0.46 |
 
 
 
