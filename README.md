@@ -21,6 +21,18 @@ For most of the experiments, I have followed the same configuration as described
 * **Scheduler**: One Cycle Policy with MaxLR: 1e-3 (For CNN)/ 1e-4 (For Transformers)
 * **Loss**: KLDiv Loss
 
+## CNN
+
+1. **Baseline Model:**
+
+Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP. Each panel represents a one-channel component.
+
+| Model | OOF-CV | Public LB |
+|-----------------|-----------------|-----------------|
+| Row 1, Column 1 | 0.7427 | 0.46 |
+
+
+
 
 ## References
 * [HMS-Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification)
