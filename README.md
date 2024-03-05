@@ -14,6 +14,7 @@ I primarily focused on utilizing **Spectrogram Image Data**, employing both [CNN
 For most of the experiments, I have followed the same configuration as described below.
 
 * **Model**: Efficientnet-b2
+* **Fold**: Stratifiedgroupkfold (5 Folds)
 * **Epochs**: 6
 * **Eval_per_epoch**: 2
 * **Optimizer**: AdamW
@@ -25,7 +26,7 @@ For most of the experiments, I have followed the same configuration as described
 
 1. **[Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb):**
 
-Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP. Each panel represents a one-channel component.
+Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP.
 
 | Model | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
