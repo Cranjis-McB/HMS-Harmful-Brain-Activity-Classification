@@ -24,7 +24,7 @@ For most of the experiments, I have followed the same configuration as described
 
 ## [CNN](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN)
 
-**[Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb):**
+**1. [Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb)**
 
 Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP.
 
@@ -32,6 +32,81 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 |-----------------|-----------------|-----------------|
 | Baseline | 0.7427 | 0.46 |
 
+**2. [Spectrogram Image Statistical Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb)**
+
+
+In this approach, rather than directly using the images, we extract the following statistics from four images and utilize them as input for our CNN:
+
+�
+min
+=
+min
+(
+LL
+,
+LP
+,
+RL
+,
+RP
+)
+X 
+min
+​
+ =min(LL,LP,RL,RP)
+�
+max
+=
+max
+(
+LL
+,
+LP
+,
+RL
+,
+RP
+)
+X 
+max
+​
+ =max(LL,LP,RL,RP)
+�
+mean
+=
+mean
+(
+LL
+,
+LP
+,
+RL
+,
+RP
+)
+X 
+mean
+​
+ =mean(LL,LP,RL,RP)
+�
+var
+=
+�
+max
+−
+�
+min
+X 
+var
+​
+ =X 
+max
+​
+ −X 
+min
+​
+ 
+ These derived statistics are then utilized as input features for our Convolutional Neural Network (CNN).
 
 
 
