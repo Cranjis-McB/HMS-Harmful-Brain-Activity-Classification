@@ -24,7 +24,7 @@ For most of the experiments, I have followed the same configuration as described
 
 ## [CNN](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN)
 
-1. **[Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb):**
+**[Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb):**
 
 Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP.
 
