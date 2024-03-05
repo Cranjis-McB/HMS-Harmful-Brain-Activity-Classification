@@ -37,10 +37,10 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 
 In this approach, rather than directly using the images, we extract the following statistics from four images and utilize them as input for our CNN:
 
-* \( X_{\text{min}} = \text{min}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
-* \( X_{\text{max}} = \text{max}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
-* \( X_{\text{mean}} = \text{mean}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
-* \( X_{\text{var}} = X_{\text{max}} - X_{\text{min}} \)
+\( X_{\text{min}} = \text{min}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
+\( X_{\text{max}} = \text{max}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
+\( X_{\text{mean}} = \text{mean}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
+\( X_{\text{var}} = X_{\text{max}} - X_{\text{min}} \)
  
  These derived statistics are then utilized as input features for our Convolutional Neural Network (CNN).
 
