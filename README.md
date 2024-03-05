@@ -37,76 +37,16 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 
 In this approach, rather than directly using the images, we extract the following statistics from four images and utilize them as input for our CNN:
 
-�
-min
-=
-min
-(
-LL
-,
-LP
-,
-RL
-,
-RP
-)
-X 
-min
-​
- =min(LL,LP,RL,RP)
-�
-max
-=
-max
-(
-LL
-,
-LP
-,
-RL
-,
-RP
-)
-X 
-max
-​
- =max(LL,LP,RL,RP)
-�
-mean
-=
-mean
-(
-LL
-,
-LP
-,
-RL
-,
-RP
-)
-X 
-mean
-​
- =mean(LL,LP,RL,RP)
-�
-var
-=
-�
-max
-−
-�
-min
-X 
-var
-​
- =X 
-max
-​
- −X 
-min
-​
+* \( X_{\text{min}} = \text{min}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
+* \( X_{\text{max}} = \text{max}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
+* \( X_{\text{mean}} = \text{mean}(\text{LL}, \text{LP}, \text{RL}, \text{RP}) \)
+* \( X_{\text{var}} = X_{\text{max}} - X_{\text{min}} \)
  
  These derived statistics are then utilized as input features for our Convolutional Neural Network (CNN).
+
+ | Model | OOF-CV | Public LB |
+|-----------------|-----------------|-----------------|
+| Statistical | 0.7324 | 0.46 |
 
 
 
