@@ -28,9 +28,9 @@ For most of the experiments, I have followed the same configuration as described
 
 Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP.
 
-| Model | OOF-CV | Public LB |
+| Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Baseline | 0.7427 | 0.46 |
+| Spectrogram Images | 0.7427 | 0.46 |
 
 **2. [Global Spectrogram Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)**
 
@@ -46,7 +46,7 @@ In this approach, rather than directly using the images, we extract the followin
 
 These can be seen as **global spectrogram features**. These derived statistics are then utilized as input features for our Convolutional Neural Network (CNN).
 
- | Model | OOF-CV | Public LB |
+ | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
 | Global Features | 0.7324 | 0.46 |
 
