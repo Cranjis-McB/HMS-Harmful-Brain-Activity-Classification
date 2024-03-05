@@ -52,7 +52,7 @@ These can be seen as **global spectrogram features**. These derived statistics a
 
 **3. Ensemble of [1](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb) + [2](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)**
 
-Ensemble can be performed in multiple ways; 1. Model Ensemble; where we take the weighted sum of the 2 models to get the final output. 2. Input Feature Ensemble; where we concat the input features from 1 and 2 and then train the model.
+Ensemble can be performed in multiple ways; 1. **Model Ensemble**; where we take the weighted sum of the 2 models to get the final output. 2. **Input Feature Ensemble**; where we concat the input features from 1 and 2 and then train the model.
 
 ```python
  # 1. Model Ensemble
