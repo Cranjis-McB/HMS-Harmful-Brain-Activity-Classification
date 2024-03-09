@@ -30,7 +30,7 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Spectrogram Images | 0.7427 | 0.46 |
+| Spectrogram Images | 0.7287 | 0.45 |
 
 **2. [Global Spectrogram Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)**
 
