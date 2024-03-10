@@ -35,13 +35,13 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 **2. [Global Spectrogram Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)**
 
 
-In this approach, rather than directly using the images, we extract the following statistics from four images and utilize them as input for our CNN:
+In this approach, rather than directly using the images, we extract the following statistics from four panel images and utilize them as input for our CNN:
 
 ```python
  X_min = np.min([LL, LP, RL, RP])
  X_max = np.max([LL, LP, RL, RP])
  X_mean = np.mean([LL, LP, RL, RP])
- X_var = Max - Min
+ X_var = X_max - X_min
 ```
 
 These can be seen as **global spectrogram features**. These derived statistics are then utilized as input features for our Convolutional Neural Network (CNN).
@@ -64,7 +64,7 @@ Ensemble can be performed in multiple ways; 1. **Model Ensemble**; where we take
 
  | Type | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Model Ensemble | NA | 0.43 better |
+| Model Ensemble | NA | 0.42 |
 | Input Feature Ensemble | 0.7027 | 0.43 |
 
 
