@@ -71,6 +71,18 @@ Ensemble can be performed in multiple ways; 1. **Model Ensemble**; where we take
 
 Instead of using Kaggle-provided spectrograms, we generated Spectrograms from EEG Data as described in [this notebook](https://www.kaggle.com/code/cdeotte/how-to-make-spectrogram-from-eeg).
 
+Note that for the baseline model, we concatenated percentile features along with the Input Features. that gave us a good **0.04 boost on CV and 0.01 boost on LB**.
+```python
+ # Percentiles
+ X_20p = np.percentile(X, q=20, axis=0)
+ X_40p = np.percentile(X, q=40, axis=0)
+ X_60p = np.percentile(X, q=60, axis=0)
+ X_80p = np.percentile(X, q=80, axis=0)
+ X_median = np.vstack([X_20p, X_40p, X_60p, X_80p])
+ 
+ input_img = np.hstack([input_img, X_median])
+```
+
  | Inputs | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
 | [Baseline + Percentiles](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/eeg-percentiles-nb.ipynb) | 0.7104 | 0.45 |
