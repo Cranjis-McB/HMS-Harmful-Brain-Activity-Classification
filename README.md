@@ -67,7 +67,7 @@ Ensemble can be performed in multiple ways; 1. **Model Ensemble**; where we take
 | Model Ensemble | NA | 0.42 |
 | Input Feature Ensemble | 0.7027 | 0.43 |
 
-**4. EEG Spectrograms:**
+**4. EEG Spectrograms**
 
 Instead of using Kaggle-provided spectrograms, we generated Spectrograms from EEG Data as described in [this notebook](https://www.kaggle.com/code/cdeotte/how-to-make-spectrogram-from-eeg).
 
