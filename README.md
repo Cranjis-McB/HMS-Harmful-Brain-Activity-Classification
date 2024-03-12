@@ -74,7 +74,7 @@ Instead of using Kaggle-provided spectrograms, we generated Spectrograms from EE
  | Inputs | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
 | [Baseline + Percentiles](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/eeg-percentiles-nb.ipynb) | 0.7104 | 0.45 |
-| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/eeg-global_features-nb.ipynb) | 0.7537 | 0.46 |
+| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/eeg-global-features-nb.ipynb) | 0.7537 | 0.46 |
 | Model Ensemble | NA | 0.42 |
 
 ## References
