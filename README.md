@@ -91,7 +91,7 @@ Note that for the baseline model, we concatenated percentile features along with
 
 **5. Kaggle + EEG Ensemble**
 
-Finally we ensemble the Models yielded in 3 and 4.
+This is the ensemble of the models yielded in 3 and 4.
 
  | Type | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
