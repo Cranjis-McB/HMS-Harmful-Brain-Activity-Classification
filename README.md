@@ -89,6 +89,16 @@ Note that for the baseline model, we concatenated percentile features along with
 | [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/eeg-global-features-nb.ipynb) | 0.7537 | 0.46 |
 | Model Ensemble | NA | 0.42 |
 
+**5. Kaggle + EEG Ensemble**
+
+Finally we ensemble the Models yielded in 3 and 4.
+
+ | Type | OOF-CV | Public LB |
+|-----------------|-----------------|-----------------|
+| Kaggle Ensemble | NA | 0.42 |
+| EEG Ensemble | NA | 0.42 |
+| Kaggle + EEG Ensemble | NA | 0.38 |
+
 ## References
 * [HMS-Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification)
 * [Audio Spectrogram Transformer](https://huggingface.co/docs/transformers/model_doc/audio-spectrogram-transformer)
