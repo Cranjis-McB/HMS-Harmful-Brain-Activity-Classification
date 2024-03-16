@@ -106,8 +106,11 @@ So far we were only using KL-Divergence Loss as a Cost function; ignoring the to
 **The idea here is that a sample with more votes is more reliable.** So we modify the cost function to take account of the total number of votes along with KLDiv-Loss. we modify the cost function to:
 
 <p align="center">
-  Loss = KLDiv + torch.log(total_votes + 1)
+  <span style="background-color:#333;color:#fff;padding:5px;">
+    Loss = KLDiv + torch.log(total_votes + 1)
+  </span>
 </p>
+
 
 
 ## References
