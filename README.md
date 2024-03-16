@@ -111,11 +111,11 @@ So far we were only using KL-Divergence Loss as a Cost function; ignoring the to
   </span>
 </p>
 
-This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we further added percentile features as described in 4 and used [Same-Class Cutmix Augmentation](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification/discussion/479446) to get an additional 0.03 boost in CV and 0.01 boost in LB over baseline described in 1.
+This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we further added percentile features as described in 4 and used [Same-Class Cutmix Augmentation](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification/discussion/479446) to get **an additional 0.03 boost in CV and 0.01 boost** in LB over baseline described in 1.
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Spectrogram + Percentile | 0.6767 | 0.42 |
+| Kaggle Spectrogram + Percentile | 0.6767 | 0.42 |
 
 
 
