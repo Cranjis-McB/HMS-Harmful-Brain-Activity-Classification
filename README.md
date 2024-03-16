@@ -24,7 +24,7 @@ For most of the experiments, I have followed the same configuration as described
 
 ## [CNN](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN)
 
-**1. [Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb)**
+### [Baseline Model](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb)
 
 Our baseline model processes a spectrogram image composed of four panels stacked vertically: LL, LP, RL, and RP.
 
@@ -32,7 +32,7 @@ Our baseline model processes a spectrogram image composed of four panels stacked
 |-----------------|-----------------|-----------------|
 | Spectrogram Images | 0.7287 | 0.45 |
 
-**2. [Global Spectrogram Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)**
+### [Global Spectrogram Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)
 
 
 In this approach, rather than directly using the images, we extract the following statistics from four panel images and utilize them as input for our CNN:
@@ -50,7 +50,7 @@ These can be seen as **global spectrogram features**. These derived statistics a
 |-----------------|-----------------|-----------------|
 | Global Features | 0.7324 | 0.46 |
 
-**3. Ensemble of [1](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb) + [2](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)**
+### Ensemble of [1](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/baseline.ipynb) + [2](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/spectrogram_stat_image-nb.ipynb)
 
 Ensemble can be performed in multiple ways; 1. **Model Ensemble**; where we take the weighted sum of the 2 models to get the final output. 2. **Input Feature Ensemble**; where we concat the input features from 1 and 2 and then train the model.
 
@@ -67,7 +67,7 @@ Ensemble can be performed in multiple ways; 1. **Model Ensemble**; where we take
 | Model Ensemble | NA | 0.42 |
 | Input Feature Ensemble | 0.7027 | 0.43 |
 
-**4. EEG Spectrograms**
+### EEG Spectrograms
 
 Instead of using Kaggle-provided spectrograms, we generated Spectrograms from EEG Data as described in [this notebook](https://www.kaggle.com/code/cdeotte/how-to-make-spectrogram-from-eeg).
 
@@ -89,7 +89,7 @@ Note that for the baseline model, we concatenated percentile features along with
 | [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/eeg-global-features-nb.ipynb) | 0.7537 | 0.46 |
 | Model Ensemble | NA | 0.42 |
 
-**5. Kaggle + EEG Ensemble**
+### Kaggle + EEG Ensemble
 
 This is the ensemble of the models yielded in 3 and 4.
 
@@ -99,7 +99,7 @@ This is the ensemble of the models yielded in 3 and 4.
 | EEG Ensemble | NA | 0.42 |
 | Kaggle + EEG Ensemble | NA | 0.38 |
 
-**6. [Vote-Weighted KLDiv Loss](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)**
+### [Vote-Weighted KLDiv Loss](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)
 
 So far we were only using KL-Divergence Loss as a Cost function; ignoring the total expert votes for a given sample.
 
@@ -108,7 +108,7 @@ So far we were only using KL-Divergence Loss as a Cost function; ignoring the to
 
 <p align="center">
   <span style="color:#333;">
-    Loss = KLDiv + torch.log(total_votes + 1)
+    Loss = KLDiv * torch.log(total_votes + 1)
   </span>
 </p>
 
