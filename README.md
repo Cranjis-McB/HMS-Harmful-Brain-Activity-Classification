@@ -5,7 +5,7 @@ This repository contains a series of experiments that improved the classificatio
 
 * The Data consists of 50-second long EEG samples plus matched spectrograms covering a 10-minute window centered at the same time and labeled the central 10 seconds.
 * Each of these samples belongs to one of six categories: Seizure, LPD, GPD, LRDA, GRDA, or Other is determined by expert voters.
-* The vote count for each sample varies among several experts, ranging from 1 to 27.
+* The vote count for each sample varies among several experts, ranging from 1 to 28.
 * The Competition Criterion is KLDivergence Loss between the predicted probability and the observed target.
 
 I primarily focused on utilizing **Spectrogram Image Data**, employing both [CNN](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/tree/main/CNN) and [Transformer](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/tree/main/Transformers) based approaches to enhance the Performance.
@@ -117,7 +117,7 @@ This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we furt
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Kaggle Spectrogram + Percentile | 0.6767 | 0.42 |
+| Kaggle Spectrogram + Percentiles | 0.6767 | 0.42 |
 
 
 
