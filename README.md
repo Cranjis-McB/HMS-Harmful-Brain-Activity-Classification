@@ -99,14 +99,14 @@ This is the ensemble of the models yielded in 3 and 4.
 | EEG Ensemble | NA | 0.42 |
 | Kaggle + EEG Ensemble | NA | 0.38 |
 
-**[Vote-Weighted KLDiv Loss](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)**
+**6. [Vote-Weighted KLDiv Loss](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)**
 
 So far we were only using KL-Divergence Loss as a Cost function; ignoring the total expert votes for a given sample.
 
 **The idea here is that a sample with more votes is more reliable.** So we modify the cost function to take account of the total number of votes along with KLDiv-Loss. we modify the cost function to:
 
 <p align="center">
-  <img src="https://latex.codecogs.com/svg.latex?\Large&space;\text{Loss} = \text{KLDiv} + \log(\text{total\_votes} + 1)" title="\Large \text{Loss} = \text{KLDiv} + \log(\text{total\_votes} + 1)" />
+  Loss = KLDiv + torch.log(total_votes + 1)
 </p>
 
 
