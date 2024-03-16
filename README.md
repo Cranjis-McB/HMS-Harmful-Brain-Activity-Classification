@@ -106,9 +106,7 @@ So far we were only using KL-Divergence Loss as a Cost function; ignoring the to
 **The idea here is that samples with more votes are more reliable.** So we modify the cost function to take account of the total number of votes along with KLDiv-Loss. we modify the cost function to:
 
 <p align="center">
-  <span style="color:#333;">
-    Loss = KLDiv * torch.log(total_votes + 1)
-  </span>
+  Loss = KLDiv \cdot \log(\text{total\_votes} + 1)
 </p>
 
 This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we further added percentile features as described in 4 and used [Same-Class Cutmix Augmentation](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification/discussion/479446) to get **an additional 0.03 boost in CV and 0.01 boost** in LB over baseline described in 1.
