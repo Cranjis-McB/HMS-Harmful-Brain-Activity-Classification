@@ -99,7 +99,7 @@ This is the ensemble of the models yielded in 3 and 4.
 | EEG Ensemble | NA | 0.42 |
 | Kaggle + EEG Ensemble | NA | 0.38 |
 
-### 6. [Vote-Weighted KLDiv Loss](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)
+### 6. Vote-Weighted KLDiv Loss
 
 So far we were only using KL-Divergence Loss as a Cost function; ignoring the total expert votes for a given sample.
 
@@ -117,8 +117,8 @@ This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we furt
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Spectrogram + Percentiles | 0.6767 | 0.42 |
-| Global Features | 0.6971 | 0.42 |
+| [Spectrogram + Percentiles](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)| 0.6767 | 0.42 |
+| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-global-cutmix-nb.ipynb) | 0.6971 | 0.42 |
 | Ensemble | NA | 0.40 |
 
 Table: Kaggle Spectrograms
