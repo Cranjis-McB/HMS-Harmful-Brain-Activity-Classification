@@ -117,7 +117,11 @@ This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we furt
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| Kaggle Spectrogram + Percentiles | 0.6767 | 0.42 |
+| Spectrogram + Percentiles | 0.6767 | 0.42 |
+| Global Features | 0.6971 | 0.42 |
+| Ensemble | NA | 0.40 |
+
+Table: Kaggle Spectrograms
 
 
 
