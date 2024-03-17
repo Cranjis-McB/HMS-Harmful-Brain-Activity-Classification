@@ -14,7 +14,7 @@ I primarily focused on utilizing **Spectrogram Image Data**, employing both [CNN
 For most of the experiments, I have followed the same configuration as described below.
 
 * **Model**: Efficientnet-b2
-* **Fold**: Stratifiedgroupkfold (5 Folds)
+* **Fold**: StratifiedGroupKFold (5 Folds)
 * **Epochs**: 6
 * **Eval_per_epoch**: 2
 * **Optimizer**: AdamW
