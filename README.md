@@ -125,7 +125,7 @@ Table: Kaggle Spectrograms
 
 ### 7. Global Normalization
 
-So far we have been normalizing images according to their mean and variance as shown below.
+So far we have been normalizing the spectrogram images according to their mean and variance as shown below.
 
 ```python
 # Normalization
