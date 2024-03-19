@@ -138,7 +138,7 @@ Instead of doing this, we derived the mean and standard deviation from the train
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
 | [Spectrograms](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/effb4_global_normalization_nb_(1).ipynb)| 0.6355 | 0.40 |
-| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-global-cutmix-nb.ipynb) | 0.6566 | 0.41 |
+| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/effb2-global-cutmix-nb.ipynb) | 0.6566 | 0.41 |
 | Ensemble | NA | 0.38 |
 
 Table: Kaggle Spectrograms
