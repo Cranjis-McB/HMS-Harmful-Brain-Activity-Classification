@@ -123,6 +123,25 @@ This alone gave us **a total of 0.02 boost in CV and 0.02 boost in LB**. we furt
 
 Table: Kaggle Spectrograms
 
+### 7. Global Normalization
+
+So far we have been normalizing images according to the particular image's mean and variance as shown below.
+
+```python
+# Normalization
+m = np.nanmean(img.flatten())
+s = np.nanstd(img.flatten())
+img = (img - m) / (s + ep)
+```
+Instead of doing this, we derived the mean and standard deviation from the global data and used them for normalization. This gave us a **a good 0.04 boost in CV and 0.02 boost in LB.** (Thanks to Sandeep Anna for suggesting this idea.)
+
+| Input | OOF-CV | Public LB |
+|-----------------|-----------------|-----------------|
+| [Spectrograms](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-cutmix-nb.ipynb)| 0.6355 | 0.40 |
+| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/vote-weighted-kldiv-loss-global-cutmix-nb.ipynb) | 0.6566 | 0.41 |
+| Ensemble | NA | 0.38 |
+
+Table: Kaggle Spectrograms
 
 
 
