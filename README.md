@@ -146,7 +146,7 @@ Table: Kaggle Spectrograms
 ### 8. Mosaic Warmup + xloss
 
 * **Mosaic Warmup**: We combined 4 spectrogram images into one image and labeled them as the average of their labels. we use these images and labels as warmup training for 3-epochs.
-* **xloss:** we further change the loss function to
+* **xloss:** we further modified the loss function to
 
   <p align="center">
   <span style="color:#333;">
@@ -156,8 +156,8 @@ Table: Kaggle Spectrograms
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| [Spectrograms](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/effb4_global_normalization_nb_(1).ipynb)| 0.6290 | 0.37 |
-| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/effb2-global-cutmix-nb.ipynb) | 0.6402 | 0.39 |
+| [Spectrograms](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/mosaic-xloss-nb.ipynb)| 0.6290 | 0.37 |
+| [Global Features](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/mosaic-xloss-global-nb.ipynb) | 0.6402 | 0.39 |
 | Ensemble | NA | 0.36 |
 
 Table: Kaggle Spectrograms
