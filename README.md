@@ -162,6 +162,23 @@ Table: Kaggle Spectrograms
 
 Table: Kaggle Spectrograms
 
+### 9. 2-Stage Training
+
+* we divided the samples into two categories based on the total number of expert votes.
+
+  1. 1-3 Votes => Noisy Labels
+  2. 4-28 votes => Good Labels
+
+In Stage 1, we trained the model only on Noisy Labels. (1-3 votes). Later in Stage 2, we finetuned the models on Good Labels. (4-28 votes)
+
+| Input | OOF-CV | Public LB |
+|-----------------|-----------------|-----------------|
+| [Kaggle Ensemble](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/mosaic-xloss-nb.ipynb)| 0.6290 | 0.34 |
+| [EEG Ensemble](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/mosaic-xloss-global-nb.ipynb) | 0.6402 | 0.37 |
+| Final Ensemble | NA | 0.32 |
+
+Table: Ensemble
+
 
 ## References
 * [HMS-Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification)
