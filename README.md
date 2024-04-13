@@ -179,6 +179,9 @@ In Stage 1, we trained the model only on Noisy Labels. (1-3 votes). Later in Sta
 
 Table: Ensemble
 
+## Competition Result
+
+* Our final solution achieved a ranking of 329th among 2768 candidates.
 
 ## References
 * [HMS-Harmful Brain Activity Classification](https://www.kaggle.com/competitions/hms-harmful-brain-activity-classification)
