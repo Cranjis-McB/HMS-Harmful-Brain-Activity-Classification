@@ -173,8 +173,8 @@ In Stage 1, we trained the model only on Noisy Labels. (1-3 votes). Later in Sta
 
 | Input | OOF-CV | Public LB |
 |-----------------|-----------------|-----------------|
-| [Kaggle Ensemble](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/mosaic-xloss-nb.ipynb)| 0.6290 | 0.34 |
-| [EEG Ensemble](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/mosaic-xloss-global-nb.ipynb) | 0.6402 | 0.37 |
+| [Kaggle Ensemble](https://github.com/Cranjis-McB/HMS-Harmful-Brain-Activity-Classification/blob/main/CNN/effb0-2-stage-training-4conf-nb.ipynb)| 0.4142 | 0.34 |
+| EEG Ensemble | 0.4608 | 0.37 |
 | Final Ensemble | NA | 0.32 |
 
 Table: Ensemble
